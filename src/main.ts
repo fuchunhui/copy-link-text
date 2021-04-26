@@ -1,8 +1,7 @@
-console.log('123');
+console.log('123456');
 
-const na = document.createComment('a');
+const na = document.createComment('p');
 document.body.appendChild(na);
-const nn = document.createElement('div');
-nn.innerHTML = '<p>测试文本内容</p>'; 
-document.body.appendChild(nn);
-
+const div = document.createElement('div');
+div.innerHTML = '<p>测试文本内容</p>'; 
+document.body.appendChild(div);
