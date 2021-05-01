@@ -1,7 +1,7 @@
 {
   "name": "copy-link-text",
   "version": "1.0.0",
-  "description": "about chrome :~:text=",
+  "description": "scroll to text fragment",
   "main": "index.ts",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^4.1.3",
+    "typescript": "^4.2.4",
     "vite": "^2.2.3"
   },
   "repository": {
@@ -19,7 +19,8 @@
   "keywords": [
     "chrome",
     "copy link text",
-    ":~:text="
+    ":~:text=",
+    "scroll to text fragment"
   ],
   "author": "fuchunhui",
   "license": "MIT",
