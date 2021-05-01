@@ -13,17 +13,36 @@
         padding: 10px;
         border-bottom: 1px solid seagreen;
       }
+      a {
+        text-decoration: none;
+      }
+      .link-share-span {
+        background: aqua;
+      }
     </style>
   </head>
   <body>
     <main id="main">
       <section>
         <h2>简单的高亮</h2>
-        <p>Text Fragments adds support for specifying a text snippet in the URL fragment. When navigating to a URL with such a fragment, the user agent can quickly emphasise and/or bring it to the user’s attention.
+        <p>
+          Text Fragments adds support for specifying a text snippet in the URL fragment. When navigating to a URL with such a fragment, the user agent can quickly emphasise and/or bring it to the user’s attention.
         </p>
         <p>
           This specification was published by the Web Platform Incubator Community Group. It is not a W3C Standard nor is it on the W3C Standards Track. Please note that under the W3C Community Contributor License Agreement (CLA) there is a limited opt-out and other conditions apply. Learn more about W3C Community and Business Groups.
         </p>
+      </section>
+
+      <section>
+        <h2>带文本的链接跳转</h2>
+        <p>
+          With text fragments, browsers may implement an option to 'Copy URL to here' when the user opens the context menu on a text selection. The browser can then generate a URL with the text selection appropriately specified, and the recipient of the URL will have the specified text conveniently indicated. Without text fragments, if a user wants to share a passage of text from a page, they would likely just copy and paste the passage, in which case the receiver loses the context of the page.
+        </p>
+        <p><a href="https://fuchunhui.github.io/copy-link-text/#:~:text=%E4%B8%80%E8%93%91%E7%83%9F%E9%9B%A8%E4%BB%BB%E5%B9%B3%E7%94%9F" target="_blank">谁怕？</a></p>
+        <article>
+          莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生。<br><br>
+          <span class="link-share-span">料峭春风吹酒醒，微冷，山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴。</span>
+        </article>
       </section>
 
       <section>
