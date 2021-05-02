@@ -16,6 +16,9 @@
       a {
         text-decoration: none;
       }
+      a + a {
+        margin-left: 20px;
+      }
       .link-share-span {
         background: aqua;
       }
@@ -28,7 +31,7 @@
   <body>
     <main id="main">
       <section>
-        <h2>简单的高亮</h2>
+        <h2><a href="#:~:text=URL%20fragment.%20When-,navigating%20to%20a%20URL,-with%20such%20a" target="_blank">简单的高亮</a></h2>
         <p>
           Text Fragments adds support for specifying a text snippet in the URL fragment. When navigating to a URL with such a fragment, the user agent can quickly emphasise and/or bring it to the user’s attention.
         </p>
@@ -38,19 +41,18 @@
       </section>
 
       <section>
-        <h2>带文本的链接跳转</h2>
+        <h2><a href="https://fuchunhui.github.io/copy-link-text/#:~:text=%E4%B8%80%E8%93%91%E7%83%9F%E9%9B%A8%E4%BB%BB%E5%B9%B3%E7%94%9F" target="_blank">带文本的链接跳转</a></h2>
         <p>
           With text fragments, browsers may implement an option to 'Copy URL to here' when the user opens the context menu on a text selection. The browser can then generate a URL with the text selection appropriately specified, and the recipient of the URL will have the specified text conveniently indicated. Without text fragments, if a user wants to share a passage of text from a page, they would likely just copy and paste the passage, in which case the receiver loses the context of the page.
         </p>
-        <p><a href="https://fuchunhui.github.io/copy-link-text/#:~:text=%E4%B8%80%E8%93%91%E7%83%9F%E9%9B%A8%E4%BB%BB%E5%B9%B3%E7%94%9F" target="_blank">谁怕？</a></p>
         <article>
-          莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生。<br><br>
-          <span class="link-share-span">料峭春风吹酒醒，微冷，山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴。</span>
+          <p>莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生。</p>
+          <p><span class="link-share-span">料峭春风吹酒醒，微冷，山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴。</span></p>
         </article>
       </section>
 
       <section>
-        <h2>重复文本高亮</h2>
+        <h2><a href="https://fuchunhui.github.io/copy-link-text/#:~:text=Temporarily%20unexpire" target="_blank">重复文本高亮</a></h2>
         <p>Temporarily unexpire flags that expired as of M89. These flags will be removed soon. – Mac, Windows, Linux, Chrome OS, Android</p>
         <p>Temporarily unexpire flags that expired as of M89. These flags will be removed soon. – Mac, Windows, Linux, Chrome OS, Android</p>
         <p>Temporarily unexpire flags that expired as of M89. These flags will be removed soon. – Mac, Windows, Linux, Chrome OS, Android</p>
@@ -71,7 +73,7 @@
         <article>
           <p>《子夜吴歌·秋歌》</p>
           <p>唐·李白</p>
-          <p>长安一片月，万户捣衣声。</p>
+          <p style="color: darkgreen;">长安一片月，万户捣衣声。</p>
           <p>秋风吹不尽，总是玉关情。</p>
           <p>何日平胡虏，良人罢远征。</p>
         </article>
