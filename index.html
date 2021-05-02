@@ -31,8 +31,8 @@
       }
       .fox-dog img {
         position: absolute;
-        left: 320px;
-        top: 127px;
+        left: 310px;
+        top: 100px;
       }
     </style>
   </head>
@@ -91,8 +91,7 @@
 
       <section class="fox-dog">
         <h2>单个块内的文本匹配</h2>
-        <a href="#:~:text=The quick,lazy dog" target="_blank"><span>#:~:text=The quick,lazy dog</span>（分隔匹配不到，行内分隔可以匹配）</a>
-
+        <a href="#:~:text=The quick,lazy dog" target="_blank">块级分隔匹配不到，行内分隔可以匹配</a>
         <article>
           <p>The<p> </p>quick brown fox</p>
           <p>jumped over the lazy dog. (p 分隔)</p>
@@ -104,9 +103,7 @@
         <img src="./src/assets/p.png">
       </section>
 
-      <copy-section t="custom element example text" p="ass">
-        <span slot="my-text">Let's have some different text!</span>
-      </copy-section>
+      <copy-section t="优先级高于 background 和 color" p="ass"></copy-section>
     </main>
     <script type="module" src="./src/main.ts"></script>
   </body>
