@@ -7,6 +7,7 @@
     <title>copy link text</title>
     <style>
       main {
+        min-width: 1000px;
         margin: 0 200px;
       }
       section {
@@ -24,6 +25,14 @@
       }
       .article-line {
         border-bottom: 1px solid cyan;
+      }
+      .fox-dog {
+        position: relative;
+      }
+      .fox-dog img {
+        position: absolute;
+        left: 320px;
+        top: 127px;
       }
     </style>
   <script type="module" crossorigin src="/copy-link-text/assets/index.3fee4744.js"></script>
@@ -81,15 +90,20 @@
         </article>
       </section>
 
-      <!-- <section>
-        <h2>高亮一段文字</h2>
-        <a href="#:~:text=The quick,lazy dog" target="_blank">选择一段</a>
-        <div>The<div> </div>quick brown fox</div>
-        <div>jumped over the lazy dog</div>
+      <section class="fox-dog">
+        <h2>单个块内的文本匹配</h2>
+        <a href="#:~:text=The quick,lazy dog" target="_blank"><span>#:~:text=The quick,lazy dog</span>（分隔匹配不到，行内分隔可以匹配）</a>
 
-        <div>The quick brown fox</div>
-        <div>jumped over the lazy dog</div>
-      </section> -->
+        <article>
+          <p>The<p> </p>quick brown fox</p>
+          <p>jumped over the lazy dog. (p 分隔)</p>
+        </article>
+        <article>
+          <p>The<span> </span>quick brown fox</p>
+          <p>jumped over the lazy dog. (span 分隔)</p>
+        </article>
+        <img src="/copy-link-text/assets/p.8098a7a7.png">
+      </section>
 
       <copy-section t="custom element example text" p="ass">
         <span slot="my-text">Let's have some different text!</span>
