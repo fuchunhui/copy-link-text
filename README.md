@@ -1,9 +1,5 @@
 # copy-link-text
+url scroll to text fragment.
 about :~:text=
 
-// TODO
-关于 scroll to text fragment的blog 介绍，详见【我是链接】
-
-### 说明
-
-代码基于 web components 构建。
+文章详细介绍，详见[掘金](https://juejin.cn/post/6959025873433559070)
