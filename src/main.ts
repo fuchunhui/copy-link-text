@@ -3,9 +3,15 @@ import {createComponent} from './defer';
 class CopySection extends HTMLElement {
   constructor() {
     super()
-    setTimeout(() => {
+
+    const immediate = this.getAttribute('immediate') || false
+    if (immediate) {
       this.render()
-    }, 100)
+    } else {
+      setTimeout(() => {
+        this.render()
+      }, 100)
+    }
   }
 
   render() {
@@ -41,6 +47,4 @@ class CopySection extends HTMLElement {
 
 customElements.define('copy-section', CopySection)
 
-setTimeout(() => {
-  createComponent();
-}, 100);
+createComponent();
