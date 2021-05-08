@@ -1,7 +1,14 @@
+import {createComponent} from './defer';
+
 class CopySection extends HTMLElement {
   constructor() {
     super()
+    setTimeout(() => {
+      this.render()
+    }, 100)
+  }
 
+  render() {
     const h2 = document.createElement('h2')
     const a = document.createElement('a')
     a.setAttribute('href', this.getAttribute('href') || '')
@@ -33,3 +40,7 @@ class CopySection extends HTMLElement {
 }
 
 customElements.define('copy-section', CopySection)
+
+setTimeout(() => {
+  createComponent();
+}, 100);
