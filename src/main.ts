@@ -2,4 +2,7 @@ import {define} from './section'
 import {createComponent} from './defer'
 
 define();
-createComponent();
+
+const ele = createComponent();
+const main = document.getElementById('main')
+main?.appendChild(ele)

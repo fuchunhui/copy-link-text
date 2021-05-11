@@ -1,7 +1,9 @@
 class CopySection extends HTMLElement {
   constructor() {
     super()
+  }
 
+  connectedCallback() {
     const immediate = this.getAttribute('immediate') || false
     if (immediate) {
       this.render()

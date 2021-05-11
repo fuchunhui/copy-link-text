@@ -11,8 +11,7 @@ const createComponent = (content = {
   ele.setAttribute('n', n);
   ele.textContent = data;
 
-  const main = document.getElementById('main')
-  main?.appendChild(ele)
+  return ele;
 };
 
 export {
